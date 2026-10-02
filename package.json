@@ -1,0 +1,28 @@
+{
+  "name": "wildroot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wildroot sourdough bakery and café: pre-order for collection from two shops. Organic, hand-drawn, handmade.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run check:contrast && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "check:contrast": "tsx scripts/check-contrast.ts",
+    "make:images": "node scripts/make-images.mjs",
+    "test:stock": "tsx scripts/test-concurrency.ts"
+  },
+  "dependencies": {
+    "next": "^16.3.7",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.2.0",
+    "sharp": "^0.34.4",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3"
+  }
+}
